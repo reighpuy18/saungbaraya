@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="author" content="Saung Baraya">
+   <meta name="description" content="Saung Baraya">
+   <title>Saung Baraya</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet" />
+   <!-- Bootstrap 5.3 -->
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <!-- AOS Animate on Scroll -->
+   <link href="css/aos.css" rel="stylesheet" />
+   <!-- Swiper -->
+   <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+   <!-- all min css -->
+   <link rel="stylesheet" href="css/all.min.css" />
+   <!-- magnific CSS -->
+   <link rel="stylesheet" href="css/magnific-popup.css" />
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+   <!-- TOPBAR -->
+   <!-- <div id="topbar">
+      <div class="container">
+         <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="top-contact d-flex flex-wrap">
+               <span><i class="fas fa-phone-alt"></i>+62 852 1010 2896</span>
+               <span><i class="fas fa-envelope"></i>hello@gmail.com</span>
+               <span><i class="fas fa-map-marker-alt"></i>Saung Baraya Jl. Pinus Bogor</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+               <span class="ttag"><i class="fas fa-fire me-1"></i>Free Delivery Today!</span>
+               <div class="tsoc">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <div class="blogo">
+               <div class="bico"><i class="fas fa-utensils"></i></div>
+               <div>
+                  <div class="bname">Saung<span> Baraya</span></div>
+                  <div class="bsub">Fast Food & Drink</div>
+               </div>
+            </div>
+         </a>
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+               <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+               <li class="nav-item"><a class="nav-link" href="#hours">Opening Hours</a></li>
+               <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-1">
+               <!-- FIX 1: Search button -->
+               <button id="navSearchBtn" title="Search" style="display: none;"><i class="fas fa-search"></i></button>
+               <a href="#menu" class="nav-link nav-cta" style="display: none;"><i
+                     class="fas fa-shopping-bag me-1"></i>Order Now</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- SEARCH OVERLAY POPUP -->
+   <div id="searchOv">
+      <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+      <div class="sovbox">
+         <h4>What are you craving today?</h4>
+         <div class="sovinput">
+            <input type="text" id="searchInput" placeholder="Search burgers, pizza, chicken..." autocomplete="off" />
+            <button><i class="fas fa-search"></i></button>
+         </div>
+         <!-- Categories inside search box -->
+         <div class="sovcats">
+            <div class="sovcat active" data-cat="all">
+               <img src="img/menu/1.jpg" alt="" />All Items
+            </div>
+            <div class="sovcat" data-cat="burgers">
+               <img src="img/menu/1.jpg" alt="" />Burgers
+            </div>
+            <div class="sovcat" data-cat="pizza">
+               <img src="img/menu/2.jpg" alt="" />Pizza
+            </div>
+            <div class="sovcat" data-cat="chicken">
+               <img src="img/menu/3.jpg" alt="" />Chicken
+            </div>
+            <div class="sovcat" data-cat="wraps">
+               <img src="img/menu/4.jpg" alt="" />Wraps
+            </div>
+            <div class="sovcat" data-cat="pasta">
+               <img src="img/menu/5.jpg" alt="" />Pasta
+            </div>
+            <div class="sovcat" data-cat="desserts">
+               <img src="img/menu/6.jpg" alt="" />Desserts
+            </div>
+         </div>
+         <div class="sovtrend">
+            <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+            <span class="ttag">Smash Burger</span>
+            <span class="ttag">Nashville Chicken</span>
+            <span class="ttag">Truffle Pizza</span>
+            <span class="ttag">Lava Cake</span>
+            <span class="ttag">Loaded Fries</span>
+            <span class="ttag">Mango Shake</span>
+         </div>
+      </div>
+   </div>
+
+   <!-- HERO -->
+   <section id="hero">
+      <div class="hs hs1"></div>
+      <div class="hs hs2"></div>
+      <div class="hbgtxt">BARAYA</div>
+      <div class="container">
+         <div class="row align-items-center g-5" style="min-height:88vh;">
+            <div class="col-lg-6">
+               <!-- <div class="hbadge">
+                  <div class="hbi"><i class="fas fa-star"></i></div>
+                  <span>#1 Rated Fast Food Restaurant in New York</span>
+               </div> -->
+               <h1 class="htitle">Sajian Nikmat,<br />Suasana Bersahabat.</h1>
+               <p class="hdesc">Saung Baraya hadir sebagai tempat makan dan berkumpul yang nyaman untuk menikmati
+                  berbagai pilihan makanan dan minuman dengan harga yang bersahabat.</p>
+               <div class="d-flex flex-wrap gap-3 mb-2">
+                  <a href="https://drive.google.com/file/d/13jX7KdclDa5CHtqprmHv88i3UMJPY6FF/view?usp=sharing"
+                     target="_blank" class="btn-red"><i class="fas fa-utensils"></i>Lihat Menu Lengkap</a>
+                  <!-- FIX 2: Magnific popup video trigger -->
+                  <!-- <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
+                     <div class="pico"><i class="fas fa-play"></i></div>
+                     <span>Watch Our Story</span>
+                  </a> -->
+               </div>
+               <!-- <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                  <div class="hstat"><span class="snum">850<em>+</em></span><small>Happy Customers</small></div>
+                  <div class="sdiv"></div>
+                  <div class="hstat"><span class="snum">120<em>+</em></span><small>Menu Items</small></div>
+                  <div class="sdiv"></div>
+                  <div class="hstat"><span class="snum">15<em>+</em></span><small>Expert Chefs</small></div>
+                  <div class="sdiv"></div>
+                  <div class="hstat"><span class="snum">12<em>yr</em></span><small>Experience</small></div>
+               </div> -->
+            </div>
+            <div class="col-lg-6 imghcircle">
+               <div style="position:relative;text-align:center;">
+                  <div class="hcircle">
+                     <img src="img/menu/dim-sum-3d.webp" alt="Burger" />
+                  </div>
+                  <div class="fcard fc1">
+                     <div class="fcoi y"><i class="fas fa-star"></i></div>
+                     <div><span class="fcnum">Chicken Steak</span></div>
+                  </div>
+                  <div class="fcard fc2">
+                     <div class="fcoi y"><i class="fas fa-star"></i></div>
+                     <div><span class="fcnum">Dimsum Mentai</span></div>
+                  </div>
+                  <div class="fcard fc3">
+                     <div class="fcoi y"><i class="fas fa-star"></i></div>
+                     <div><span class="fcnum">Burger Premium</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- MARQUEE -->
+   <div class="mqsec">
+      <div class="mqtrack">
+         <div class="mqitem"><i class="fas fa-circle"></i>Chicken Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Beef Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Sosis Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Dimsum Mentai</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Roti Bakar</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Frenchfries</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Pisang Bakar</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Chicken Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Beef Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Sosis Steak</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Dimsum Mentai</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Roti Bakar</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Frenchfries</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Pisang Bakar</div>
+         <!-- <div class="mqitem"><i class="fas fa-circle"></i>Bakpao</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Sandwiches</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Spaghetti</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Kwetiau</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Mie Pecah</div>
+         <div class="mqitem"><i class="fas fa-circle"></i>Burger Premium</div> -->
+      </div>
+   </div>
+
+   <!-- CATEGORY -->
+   <!-- <section id="category">
+      <div class="container">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="slbl">What We Offer</span>
+            <h2 class="stitle">Cari Menu Berdasarkan <span>Kategori</span></h2>
+            <div class="sline"></div>
+            <p class="sdesc mx-auto" style="max-width:480px;">Kini saatnya kamu merasakan sendiri suasana dan sajian
+               dari Saung Baraya.</p>
+         </div>
+         <div class="row g-3 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+               <div class="catcard active" data-filter="all">
+                  <img class="catimg" src="img/category/1.jpg" alt="" />
+                  <div class="catnm">All Items</div>
+                  <div class="catct">99 items</div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+               <div class="catcard" data-filter="burgers">
+                  <img class="catimg" src="img/category/2.jpg" alt="" />
+                  <div class="catnm">Burgers</div>
+                  <div class="catct">24 items</div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+               <div class="catcard" data-filter="pizza">
+                  <img class="catimg" src="img/category/3.jpg" alt="" />
+                  <div class="catnm">Pizza</div>
+                  <div class="catct">18 items</div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+               <div class="catcard" data-filter="chicken">
+                  <img class="catimg" src="img/category/4.jpg" alt="" />
+                  <div class="catnm">Fried Chicken</div>
+                  <div class="catct">15 items</div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+               <div class="catcard" data-filter="wraps">
+                  <img class="catimg" src="img/category/5.jpg" alt="" />
+                  <div class="catnm">Wraps</div>
+                  <div class="catct">12 items</div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+               <div class="catcard" data-filter="desserts">
+                  <img class="catimg" src="img/category/6.jpg" alt="" />
+                  <div class="catnm">Desserts</div>
+                  <div class="catct">20 items</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> -->
+
+   <!-- ABOUT -->
+   <!-- <section id="about">
+      <div class="container">
+         <div class="row align-items-center g-5">
+            <div class="col-lg-5" data-aos="fade-right">
+               <div class="astack">
+                  <div class="aexp"><span class="anum">12+</span><small>Years of<br />Excellence</small></div>
+                  <div class="amain"><img src="img/about1.jpg" alt="Restaurant" /></div>
+                  <div class="asm"><img src="img/about2.jpg" alt="" /></div>
+               </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+               <span class="slbl">Our Story</span>
+               <h2 class="stitle text-start">We Invite You to Visit<br />Our <span>Food Restaurant</span></h2>
+               <div class="sline lft"></div>
+               <p class="sdesc mb-4">Founded in 2012, Sarab began as a small corner joint with a big dream - to serve
+                  food that brings people together. Today we're proud to serve thousands of happy customers every week
+                  with the same passion that started it all.</p>
+               <div class="mb-4">
+                  <div class="fti">
+                     <div class="ftico r"><i class="fas fa-leaf"></i></div>
+                     <div>
+                        <h6>100% Fresh Ingredients</h6>
+                        <p>We source locally and sustainably. Every ingredient is hand-picked daily for maximum
+                           freshness.</p>
+                     </div>
+                  </div>
+                  <div class="fti">
+                     <div class="ftico y"><i class="fas fa-award"></i></div>
+                     <div>
+                        <h6>Award-Winning Recipes</h6>
+                        <p>Our signature recipes have won national culinary awards 5 years in a row.</p>
+                     </div>
+                  </div>
+                  <div class="fti">
+                     <div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+                     <div>
+                        <h6>Lightning-Fast Delivery</h6>
+                        <p>Order online and get hot, fresh food at your door in under 25 minutes, guaranteed.</p>
+                     </div>
+                  </div>
+               </div>
+               <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>View Full Menu</a>
+            </div>
+         </div>
+      </div>
+   </section> -->
+
+   <!-- MENU -->
+   <section id="menu">
+      <div class="container">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="slbl">Saung Baraya</span>
+            <h2 class="stitle">Sajian <span>Kami</span></h2>
+            <div class="sline"></div>
+         </div>
+         <!-- FIX 3 � filter buttons -->
+         <div class="text-center mb-4" data-aos="fade-up">
+            <button class="filtbtn active" data-f="all">All</button>
+            <button class="filtbtn" data-f="makanan">Aneka Makanan</button>
+            <button class="filtbtn" data-f="camilan">Aneka Camilan</button>
+            <button class="filtbtn" data-f="minuman">Aneka Minuman</button>
+         </div>
+         <div class="row g-4" id="mgrid">
+            <!-- CARD 1 -->
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="makanan" data-aos="fade-up">
+               <div class="mcard" data-img="img/menu/chicken_steak.jpg" data-title="Chicken Steak" data-cat="Makanan"
+                  data-price="17k" data-old="$18.99" data-rating="4.9" data-reviews="128" data-cal="620" data-time="12"
+                  data-desc="asdf" data-tags="Spicy,Bestseller,Beef">
+                  <div class="mimg">
+                     <img src="img/menu/chicken_steak.jpg" alt="Smash Burger" />
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Makanan</div>
+                     <div class="mtit">Chicken Steak</div>
+                     <!-- <div class="mfoot">
+                        <div>
+                           <div class="mprice">IDR 17K</div>
+                        </div>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="camilan" data-aos="fade-up">
+               <div class="mcard" data-img="img/menu/dimsum_goreng_keju_lumer.jpg" data-title="Chicken Steak"
+                  data-cat="Burgers" data-price="$14.99" data-old="$18.99" data-rating="4.9" data-reviews="128"
+                  data-cal="620" data-time="12" data-desc="" data-tags="Spicy,Bestseller,Beef">
+                  <div class="mimg">
+                     <img src="img/menu/dimsum_goreng_keju_lumer.jpg" alt="Smash Burger" />
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Camilan</div>
+                     <div class="mtit">Dimsum Goreng</div>
+                  </div>
+               </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-sm-6 col-lg-4 mwrap" data-c="minuman" data-aos="fade-up">
+               <div class="mcard" data-img="img/menu/coffee_latte.jpg" data-title="Chicken Steak" data-cat="Burgers"
+                  data-price="$14.99" data-old="$18.99" data-rating="4.9" data-reviews="128" data-cal="620"
+                  data-time="12" data-desc="" data-tags="Spicy,Bestseller,Beef">
+                  <div class="mimg">
+                     <img src="img/menu/coffee_latte.jpg" alt="Smash Burger" />
+                  </div>
+                  <div class="mbody">
+                     <div class="mcat">Minuman</div>
+                     <div class="mtit">Nescafe Latte</div>
+                     <!-- <div class="mfoot">
+                        <div>
+                           <div class="mprice">IDR 17K</div>
+                        </div>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end #mgrid -->
+         <div class="text-center mt-5"><a href="#" class="btn-red"><i class="fas fa-th-large"></i>Lihat Menu Lengkap</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- HOURS -->
+   <section id="hours">
+      <div class="hrsbg"></div>
+      <div class="container" style="position:relative;z-index:2;">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="slbl" style="color:#fff;">Opening Hours</span>
+            <h2 class="stitle" style="color:#fff;">We're Open <span style="color:var(--secondary);">For You</span></h2>
+            <div class="sline"></div>
+         </div>
+         <div class="row g-4 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+               <div class="hrscard">
+                  <div class="hrsrow">
+                     <span class="hrsday"><i class="fas fa-calendar-day me-2"
+                           style="color:var(--secondary);"></i>Monday</span>
+                     <div class="d-flex align-items-center gap-2">
+                        <div class="hdot off"></div>
+                        <span class="hrstime" style="color:#ff6b6b;">Closed</span>
+                     </div>
+                  </div>
+                  <div class="hrsrow">
+                     <span class="hrsday"><i class="fas fa-calendar-day me-2"
+                           style="color:var(--secondary);"></i>Tuesday - Friday</span>
+                     <div class="d-flex align-items-center gap-2">
+                        <div class="hdot on"></div>
+                        <span class="hrstime">10:00 - 20:00</span>
+                     </div>
+                  </div>
+                  <div class="hrsrow">
+                     <span class="hrsday"><i class="fas fa-calendar-day me-2"
+                           style="color:var(--secondary);"></i>Saturday - Sunday</span>
+                     <div class="d-flex align-items-center gap-2">
+                        <div class="hdot on"></div>
+                        <span class="hrstime">10:00 - 22:00</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+               <div class="hrscard">
+                  <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2"
+                           style="color:var(--secondary);"></i>Address</span><span class="hrstime"
+                        style="font-size:.8rem;">Saung Baraya Jl. Pinus</span></div>
+                  <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2"
+                           style="color:var(--secondary);"></i>Phone</span><span class="hrstime"
+                        style="font-size:.8rem;">0852 1010 2896</span></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- GALLERY -->
+   <section id="gallery">
+      <div class="container">
+         <div class="text-center mb-5" data-aos="fade-up">
+            <span class="slbl">Saung Baraya</span>
+            <h2 class="stitle">Gallery</h2>
+            <div class="sline"></div>
+         </div>
+         <div class="ggrid" data-aos="fade-up">
+            <div class="gitem" data-gi="0" data-gimg="img/gallery/Saung-Baraya-1.jpg" data-gtitle="Image 1"
+               data-gdesc="">
+               <img src="img/gallery/Saung-Baraya-1.jpg" alt="Makanan" />
+               <div class="gover"><span><i class="fas fa-expand-alt"></i> Image 1</span></div>
+            </div>
+            <div class="gitem" data-gi="1" data-gimg="img/gallery/Saung-Baraya-2.jpg" data-gtitle="Image 2"
+               data-gdesc="">
+               <img src="img/gallery/Saung-Baraya-2.jpg" alt="Pizza" />
+               <div class="gover"><span><i class="fas fa-expand-alt"></i> Image 2</span></div>
+            </div>
+            <div class="gitem" data-gi="2" data-gimg="img/gallery/Saung-Baraya-3.jpg" data-gtitle="Image 3"
+               data-gdesc="">
+               <img src="img/gallery/Saung-Baraya-3.jpg" alt="Chicken" />
+               <div class="gover"><span><i class="fas fa-expand-alt"></i> Image 3</span></div>
+            </div>
+            <div class="gitem" data-gi="3" data-gimg="img/gallery/Saung-Baraya-4.jpg" data-gtitle="Image 4"
+               data-gdesc="">
+               <img src="img/gallery/Saung-Baraya-4.jpg" alt="Desserts" />
+               <div class="gover"><span><i class="fas fa-expand-alt"></i> Image 4</span></div>
+            </div>
+            <div class="gitem" data-gi="4" data-gimg="img/gallery/Saung-Baraya-5.jpg" data-gtitle="Image 5"
+               data-gdesc="">
+               <img src="img/gallery/Saung-Baraya-5.jpg" alt="Wraps" />
+               <div class="gover"><span><i class="fas fa-expand-alt"></i> Image 5</span></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- GALLERY POPUP -->
+   <div id="galPop">
+      <div class="gpbox">
+         <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+         <img id="gpImg" src="" alt="" />
+         <div class="gpcap">
+            <h5 id="gpTitle"></h5>
+            <p id="gpDesc"></p>
+         </div>
+         <div class="gpnav">
+            <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+            <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+         </div>
+      </div>
+   </div>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="container">
+         <div class="row g-5">
+            <div class="col-lg-4">
+               <div class="fnm">Saung<span> Baraya</span></div>
+               <p class="fdesc">Fast Food & Drinks.</p>
+            </div>
+            <div class="col-lg-4">
+               <div class="fci">
+                  <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="fciinfo"><strong>Address</strong>Saung Baraya Jl. Pinus</div>
+               </div>
+               <div class="fci">
+                  <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                  <div class="fciinfo"><strong>Phone</strong>0852 1010 2896</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="fbot">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <p>&copy 2026 <span>Saung Baraya</span>.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Back to top -->
+   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+   <!-- jQuery -->
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <!-- Bootstrap 5 -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- AOS -->
+   <script src="js/aos.js"></script>
+   <!-- Swiper -->
+   <script src="js/swiper-bundle.min.js"></script>
+   <!-- CounterUp -->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- Main js -->
+   <script src="js/main.js"></script>
+</body>
+
+</html>
